@@ -27,27 +27,29 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false,index: true|
 |email|string|null: false|
-              <!-- ⬆|unique: true|でもOK？ -->
 |password|string|null: false|
 ### Association
-- has_many :messages_id
-- has_many  :messages,  through:  :posts_tags
+- has_many :messages
+- has_many :users_group
+- has_many :groups,  through:  :users_group
+
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 ### Association
-- has_many :users_id
-- has_many  :users,  through:  :users_id
+- has_many :users_group
+- has_many :users,  through:  :users_group
+- has_many :messages
 
 ## users_groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|groups_id|integer|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
 - belongs_to :group
@@ -55,11 +57,11 @@ Things you may want to cover:
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|body|text||
+|image|string||
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 ### Association
-- belongs_to :post
+- belongs_to :group
 - belongs_to :user
 
