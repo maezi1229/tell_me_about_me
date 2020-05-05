@@ -1,0 +1,36 @@
+.wrapper__main_chat
+  .wrapper__main_chat__group-info
+    .wrapper__main_chat__group-info__1  
+      .wrapper__main_chat__group-info__1__2
+        %p.name1
+          test
+        %p.name2
+          Member：masa
+      .wrapper__main_chat__group-info__1__3
+        = link_to "Edit", "#", class:"edit-btn"
+  .wrapper__main_chat__message-list
+    .wrapper__main_chat__message-list__a
+      %p.info1
+        masa
+      %p.info2
+        2019/11/20(Wed) 17:43:01
+    .wrapper__main_chat__message-list__b
+      おはよう！
+    .wrapper__main_chat__message-list__a
+      %p.info1
+        masa
+      %p.info2
+        2019/11/20(Web) 17:43:34
+    .wrapper__main_chat__message-list__b
+      今日は夜から雨
+  .wrapper__main_chat__message-form
+    %form#new_message.new_message{"accept-charset" => "UTF-8", :action => "/groups/28859/messages", :enctype => "multipart/form-data", :method => "post"}
+      %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+      %input{:name => "authenticity_token", :type => "hidden", :value => "ogwixc5lTqpfSRvubZyKZwBWAjx+nRgjim+FOK4fuuS5QeBdie/e37fUrTpxpSH2qt2mlPwdNQ6cQjwIiFgpOw=="}/
+      .input-box
+        %input#message_content.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
+        %label.input-box__image{:for => "message_image"}
+          %i.far.fa-image
+          %input#message_image.input-box__image__file{:name => "message[image]", :type => "file"}/
+      %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
+
