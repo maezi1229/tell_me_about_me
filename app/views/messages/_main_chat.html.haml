@@ -24,13 +24,14 @@
     .wrapper__main_chat__message-list__b
       今日は夜から雨
   .wrapper__main_chat__message-form
-    %form#new_message.new_message{"accept-charset" => "UTF-8", :action => "/groups/28859/messages", :enctype => "multipart/form-data", :method => "post"}
-      %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-      %input{:name => "authenticity_token", :type => "hidden", :value => "ogwixc5lTqpfSRvubZyKZwBWAjx+nRgjim+FOK4fuuS5QeBdie/e37fUrTpxpSH2qt2mlPwdNQ6cQjwIiFgpOw=="}/
+    %form.new_message
       .input-box
-        %input#message_content.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
-        %label.input-box__image{:for => "message_image"}
-          %i.far.fa-image
-          %input#message_image.input-box__image__file{:name => "message[image]", :type => "file"}/
-      %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas','image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class:"submit-btn"}
+
+
+
 
