@@ -80,9 +80,8 @@
         color: #434a54;
         font-size: 14px;
       }
-      
     }
-    
+
     &__message-form{
       background-color: #d2d2d2;
       height: 90px;
@@ -142,47 +141,39 @@
   margin-left: 10px;
 }
 
-#new_message.new_message{
+form {
   display: flex;
-  width: 100%;
-}
+  .input-box {
+    display: flex;
+    width: 100%;
+    position: relative;
+    &__text {
+      height: 50px;
+      width: 100%;
+      color: #434a54;
+      border-style: none;
+      padding: 0 0px 0 10px
+    }
+    &__image {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 1.3rem;
 
-.input-box{
-  position: relative;
-  height: 50px;
-  width: 100%;
-}
+      &__file {
+        display: none;
+      }
+    }
+  }
+  .submit-btn {
+    width: 100px;
+    height: 50px;
+    padding: 0 30px;
+    margin-left: 15px;
+    background-color: #38aef0;
+    color: white;
+  }
 
-.input-box__text{
-  height: 50px;
-  width: 100%;
-  padding: 0 40px 0 10px;
-  color: #434a54;
-  border-style: none;
-}
 
-.input-box__image {
-  font-size: 1.3rem;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
-.submit-btn{
-  width: 100px;
-  height: 50px;
-  padding: 0 30px;
-  margin-left: 15px;
-  background-color: #38aef0;
-  color: white;
-
-}
-
-.fa-image::before {
-  content: "\f03e";
-}
-
-#message_image.input-box__image__file {
-  display: none;
 }
