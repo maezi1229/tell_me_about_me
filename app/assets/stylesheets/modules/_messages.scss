@@ -52,8 +52,8 @@
         padding: 20px 20px 0;
         &__1{
           margin-bottom: 40px;
+            }
         }
-      }
   &__main_chat{
     width: calc(100vw - 300px);
     &__group-info{
@@ -106,13 +106,19 @@
   text-decoration: none;
 }
 
+.group-line{
+  text-decoration: none;
+}
 
 .group1 {
+  color: #ffffff;
   font-size: 15px;
   margin-bottom: 5px;
 }
 
 .group2 {
+  text-decoration: none;
+  color: #ffffff;
   font-size: 11px;
 }
 
