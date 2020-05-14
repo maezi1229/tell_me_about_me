@@ -10,12 +10,12 @@
           = link_to edit_user_path(current_user), class: "wrapper__side_bar__user-name__1__2__4__btn" do
             = icon('fas', 'cog', class: "wrapper__side_bar__user-name__1__2__4__btn--iconb") 
   .wrapper__side_bar__group-list
-    .wrapper__side_bar__group-list__1
-      - current_user.groups.each do |group|
-        .group
-          = link_to '#',class: "group-line" do 
-            %p.group1 
-              = group.name  
-            %p.group2 
-              メッセージはまだありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path(group),class: "group-line" do 
+          %p.group1 
+            = group.name  
+          %p.group2 
+            = group.show_last_message
  
+
