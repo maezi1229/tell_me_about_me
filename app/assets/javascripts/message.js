@@ -58,10 +58,12 @@ $(function(){
         $('.wrapper__main_chat__message-list').append(html);
         $('#new_message')[0].reset();
         $('.wrapper__main_chat__message-list').animate({ scrollTop: $('.wrapper__main_chat__message-list')[0].scrollHeight});
-        $('.submit-btn').prop('disabled', false);
       })
       .fail(function() {
         alert("メッセージ送信に失敗しました");
+      })
+      .always(function(){ 
+        $('.submit-btn').prop('disabled', false);
       });
   });
 
@@ -92,6 +94,7 @@ $(function(){
     })
     .fail(function() {
       alert('error');
+      
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
