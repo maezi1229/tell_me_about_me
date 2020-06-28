@@ -3,10 +3,10 @@
 lock '3.14.0'
 
 # Capistranoのログの表示に利用する
-set :application, 'chat-space'
+set :application, 'tell_me_about_me'
 
 # どのリポジトリからアプリをpullするかを指定する
-set :repo_url,  'git@github.com:maezi1229/chat-space.git'
+set :repo_url,  'git@github.com:maezi1229/tell_me_about_me.git'
 
 # バージョンが変わっても共通で参照するディレクトリを指定
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')

@@ -1,21 +1,33 @@
-#account-page.account-page
-  .account-page__inner.clearfix
-    .account-page__inner--left.account-page__header
-      %h2 Edit Account
-      %h5 アカウントの編集
-      = link_to "ログアウト", destroy_user_session_path, method: :delete,  class: 'btn'
-      = link_to "トップページに戻る", :back, class: 'btn'
-    .account-page__inner--right.user-form
-      = form_for(current_user) do |f|
-        .field
-          .field-label
-            = f.label :name
-          .field-input
-            = f.text_field :name, autofocus: true
-        .field
-          .field-label
-            = f.label :email
-          .field-input
-            = f.email_field :email
-        .actions
-          = f.submit "Update", class: 'btn'
+.index02
+  .header01
+    .header01__logo1
+      .top
+        = link_to "Tell me about me !", root_path, class: 'post'
+    .header01__logo2
+      -# .about
+      -#   = link_to "このサービスについて", users_about_path, class: 'post'
+      .user
+        = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'post'
+        = link_to "トップページに戻る", root_path, class: 'post'
+  #account-page.account-page
+    .account-page__inner.clearfix
+      .account-page__inner--left.account-page__header
+        %h2 Edit Account
+        %h5 アカウントの編集
+        = link_to "ログアウト", destroy_user_session_path, method: :delete,  class: 'btn'
+        = link_to "トップページに戻る", :back, class: 'btn'
+      .account-page__inner--right.user-form
+        = form_for(current_user) do |f|
+          .field
+            .field-label
+              = f.label :name
+            .field-input1
+              = f.text_field :name, autofocus: true
+          .field
+            .field-label
+              = f.label :email
+            .field-input1
+              = f.email_field :email
+          .actions
+            = f.submit "Edit Account", class: 'btn'
+

@@ -3,18 +3,26 @@
     .wrapper__side_bar__user-name__1
       .wrapper__side_bar__user-name__1__2
         .wrapper__side_bar__user-name__1__2__3
-          = current_user.name
+          - if current_user.image_name?
+            = image_tag current_user.image_name.url, size: "70x85"
+          -else
+            = image_tag "noimage.png", size: "70x85"
         .wrapper__side_bar__user-name__1__2__4
-          = link_to new_group_path() , class: "wrapper__side_bar__user-name__1__2__4__btn" do
-            = icon('far', 'edit', class: "wrapper__side_bar__user-name__1__2__4__btn--icona") 
-          = link_to edit_user_path(current_user), class: "wrapper__side_bar__user-name__1__2__4__btn" do
-            = icon('fas', 'cog', class: "wrapper__side_bar__user-name__1__2__4__btn--iconb") 
+          = current_user.name
+        .wrapper__side_bar__user-name__1__2__5
+          = link_to new_group_path() , class: "wrapper__side_bar__user-name__1__2__5__btn" do
+            = icon('far', 'edit', class: "wrapper__side_bar__user-name__1__2__5__btn--icona") 
+          = link_to edit_user_path(current_user), class: "wrapper__side_bar__user-name__1__2__5__btn" do
+            = icon('fas', 'cog', class: "wrapper__side_bar__user-name__1__2__5__btn--iconb") 
   .wrapper__side_bar__group-list
     - current_user.groups.each do |group|
       .group
         = link_to group_messages_path(group),class: "group-line" do 
           %p.group1 
+            = current_user.name
+            の
             = group.name  
+            について
           %p.group2 
             = group.show_last_message
  

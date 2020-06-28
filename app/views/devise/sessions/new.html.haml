@@ -1,21 +1,35 @@
-#account-page.account-page
-  .account-page__inner.clearfix
-    .account-page__inner--left.account-page__header
-      %h2 Log in
-      %h5 登録しているユーザーでログイン
-      = render "devise/shared/links"
-    .account-page__inner--right.user-form
-      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-        .field
-          .field-label
-            = f.label :email
-          .field-input
-            = f.email_field :email, autofocus: true
+.index01
+  .header01
+    .header01__logo1
+      .top
+        Tell me about me !
+    .header01__logo2
+      .about
+        = link_to "このサービスについて", users_about_path, class: 'post'
+      .user
+        = link_to "ログイン", new_user_session_path, class: 'post'
+        = link_to "新規登録", new_user_registration_path, class: 'post'
+
+  #account-page.account-page
+    .account-page__inner.clearfix
+      .account-page__inner--left.account-page__header
+        %h2 Log in
+        %h5 登録しているユーザーでログイン
+        = render "devise/shared/links"
+      .account-page__inner--right.user-form
+        = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
           .field
             .field-label
-              = f.label :password
-              %i (英数字8文字以上)
-            .field-input
-              = f.password_field :password, autocomplete: "off"
-          .actions
-            = f.submit "Log in", class: 'btn'
+              = f.label :email
+            .field-input1
+              = f.email_field :email, autofocus: true
+            .field
+              .field-label
+                = f.label :password
+                %i (英数字8文字以上)
+              .field-input1
+                = f.password_field :password, autocomplete: "off"
+            .actions
+              = f.submit "Log in", class: 'btn'
+
+

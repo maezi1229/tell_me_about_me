@@ -1,6 +1,15 @@
+.header01
+  .header01__logo1
+    .top
+      = link_to "Tell me about me !", root_path, class: 'post'
+  .header01__logo2
+    -# .about
+    -#   = link_to "このサービスについて", users_about_path, class: 'post'
+    .user
+      = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'post'
+      = link_to "トップページに戻る", root_path, class: 'post'
+
 .wrapper
   = render "side_bar"
   = render "main_chat"
 
-
-    

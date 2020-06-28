@@ -20,6 +20,9 @@ class UsersController < ApplicationController
     end
   end
 
+  def about
+  end
+
   
 
   private
@@ -28,3 +31,4 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :email)
   end
 end
+

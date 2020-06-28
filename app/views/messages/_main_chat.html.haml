@@ -3,7 +3,10 @@
     .wrapper__main_chat__group-info__1  
       .wrapper__main_chat__group-info__1__2
         %p.name1
+          = current_user.name
+          の
           = @group.name
+          についてTell me !
         %ul.name2
           Member：
           %li.test
@@ -14,7 +17,6 @@
         
   .wrapper__main_chat__message-list
     = render @messages
-
   .wrapper__main_chat__message-form
     .new_message
       = form_for [@group, @message] do |f|

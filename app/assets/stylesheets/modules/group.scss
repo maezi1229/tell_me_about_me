@@ -26,9 +26,8 @@ li {
 
 .chat-group-form {
   width: 980px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #fff;
+  margin: 70px auto;
+  padding: 70px;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-sizing: border-box;
@@ -105,3 +104,35 @@ li {
     }
   }
 }
+
+.wrapper {
+  margin-top: 70px;
+}
+
+.video {
+  position: relative;  //横幅がウィンドウズサイズの縦幅よりもはみ出てしまう場合に、左にずらすために指定。
+  height: 100vh; // 高さを画面いっぱいに指定する。
+  width: 100vw; // 横幅もいっぱいに。
+}
+
+* {
+  font-family: 'Bitter', serif;
+}
+
+.content__box__video {
+  position: absolute;
+  background-attachment: fixed; // 中央揃えになるように、fixed。
+  background-position: center center; // positionも中央に。
+  background-size: cover; // 画面サイズに応じてサイズを可変するように設定。
+}
+
+.index02 {
+  height: 780px;
+  background-image: image-url('road.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+

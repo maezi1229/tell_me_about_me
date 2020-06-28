@@ -1,32 +1,47 @@
-#account-page.account-page
-  .account-page__inner.clearfix
-    .account-page__inner--left.account-page__header
-      %h2 Create Account
-      %h5 新規アカウントの作成
-      = render "devise/shared/links"
-    .account-page__inner--right.user-form
-      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-        = devise_error_messages!
-        .field
-          .field-label
-            = f.label :name
-          .field-input
-            = f.text_field :name, autofocus: true
-        .field
-          .field-label
-            = f.label :email
-          .field-input
-            = f.email_field :email
-        .field
-          .field-label
-            = f.label :password
-            %i (英数字8文字以上)
-          .field-input
-            = f.password_field :password, autocomplete: "off"
-        .field
-          .field-label
-            = f.label :password_confirmation
-          .field-input
-            = f.password_field :password_confirmation, autocomplete: "off"
-        .actions
-          = f.submit "Create Account", class: 'btn'
+.index01
+  .header01
+    .header01__logo1
+      .top
+        Tell me about me !
+    .header01__logo2
+      .about
+        = link_to "このサービスについて", users_about_path, class: 'post'
+      .user
+        = link_to "ログイン", new_user_session_path, class: 'post'
+        = link_to "新規登録", new_user_registration_path, class: 'post'
+
+  #account-page.account-page
+    .account-page__inner.clearfix
+      .account-page__inner--left.account-page__header
+        %h2 Create Account
+        %h5 新規アカウントの作成
+        = render "devise/shared/links"
+      .account-page__inner--right.user-form
+        = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+          = devise_error_messages!
+          .field
+            .field-label
+              = f.label :name, "名前/プロフィール画像"       
+            .field-input0
+              = f.text_field :name, class: 'field-input0__1', autofocus: true
+              = f.label :image_name, class: 'field-input0__2' do
+                = icon('fas', 'image', class: 'icon')
+                = f.file_field :image_name, class: 'hidden'
+          .field
+            .field-label
+              = f.label :email
+            .field-input1
+              = f.email_field :email
+          .field
+            .field-label
+              = f.label :password
+              %i (英数字8文字以上)
+            .field-input1
+              = f.password_field :password, autocomplete: "off"
+          .field
+            .field-label
+              = f.label :password_confirmation
+            .field-input1
+              = f.password_field :password_confirmation, autocomplete: "off"
+          .actions
+            = f.submit "Create Account", class: 'btn'

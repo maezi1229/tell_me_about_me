@@ -10,4 +10,6 @@ Rails.application.routes.draw do
       resources :messages, only: :index, defaults: { format: 'json' }
     end
   end
+  get 'users/about', to: 'users#about'
 end
+

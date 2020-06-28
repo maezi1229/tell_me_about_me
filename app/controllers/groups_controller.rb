@@ -5,6 +5,8 @@ class GroupsController < ApplicationController
   
   def new
     @group = Group.new
+    # 配列に要素を追加
+    # グループを新規作成する時はログイン中のユーザーを必ず含めたいためあらかじめ追加
     @group.users << current_user
   end
 
@@ -32,6 +34,7 @@ class GroupsController < ApplicationController
 
   private
   def group_params
+    # 配列に対して保存を許可したい場合は、キーの名称と関連づけてバリューに「[]」と記述します。
     params.require(:group).permit(:name, user_ids: [])
   end
 

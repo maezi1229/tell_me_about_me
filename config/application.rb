@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module ChatSpace
+module tell_me_about_me
   class Application < Rails::Application
     config.time_zone = 'Tokyo'
     config.generators do |g|
