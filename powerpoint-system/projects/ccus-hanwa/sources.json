@@ -1,1 +1,302 @@
-[]
+[
+  {
+    "id": "SRC01",
+    "source": "環境省",
+    "url": "https://www.env.go.jp/earth/ccs/index.html",
+    "title": "二酸化炭素回収・有効利用・貯留（CCUS）に関する取組",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "CCUSの定義（分離回収・有効利用・貯留の3要素）と2050年カーボンニュートラルとの関係",
+    "trust_tier": "government"
+  },
+  {
+    "id": "SRC02",
+    "source": "資源エネルギー庁 CCS政策室",
+    "url": "https://www.kantei.go.jp/jp/singi/kaiyou/sanyo/dai73/73shiryou4.pdf",
+    "title": "二酸化炭素の貯留事業に関する法律（CCS事業法）について（2024年5月）",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "CCS事業法の目的（2030年までの民間事業開始環境整備）と事業許可制度の概要",
+    "trust_tier": "government"
+  },
+  {
+    "id": "SRC03",
+    "source": "環境ビジネスオンライン",
+    "url": "https://www.kankyo-business.jp/news/499a6f6e-a3bd-495a-8ea4-59d86d1b5259",
+    "title": "CCS事業法の貯留・運搬規定、5月22日施行 事業開始に向けた枠組み整う",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "CCS事業法の段階的施行スケジュール（探査→試掘→貯留・パイプライン運搬）",
+    "trust_tier": "reputable_press"
+  },
+  {
+    "id": "SRC04",
+    "source": "経済産業省",
+    "url": "https://www.meti.go.jp/press/2024/06/20240628011/20240628011.html",
+    "title": "CCS事業化に向けた先進的取組",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "令和6年度「先進的CCS事業」9案件の選定発表（2024年6月28日）",
+    "trust_tier": "government"
+  },
+  {
+    "id": "SRC05",
+    "source": "JOGMEC（独立行政法人エネルギー・金属鉱物資源機構）",
+    "url": "https://www.jogmec.go.jp/news/release/news_10_00191.html",
+    "title": "CCS事業化に向けた先進的取り組み～2030年度までのCO2貯留開始に向け、設計作業等について9案件を候補として選定～",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "9案件（国内貯留5案件＋アジア大洋州貯留4案件）、合計年間約2,000万トンのCO2貯留目標",
+    "trust_tier": "government"
+  },
+  {
+    "id": "SRC06",
+    "source": "JOGMEC",
+    "url": "https://www.jogmec.go.jp/content/300390317.pdf",
+    "title": "令和6年度「先進的CCS事業に係る設計作業等」に選定した案件の概要",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "個別プロジェクト（苫小牧、東新潟、首都圏、マレーシア等）の参画企業・地域・貯留量目標の詳細一覧",
+    "trust_tier": "government"
+  },
+  {
+    "id": "SRC07",
+    "source": "日経BP（メガソーラービジネス）",
+    "url": "https://project.nikkeibp.co.jp/ms/atcl/19/news/00001/04314/?ST=msb",
+    "title": "苫小牧など9件の「CCS事業」選定、海外でのCO2固定も",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "9案件の概要、国内・海外の内訳の報道",
+    "trust_tier": "reputable_press"
+  },
+  {
+    "id": "SRC08",
+    "source": "経済産業省",
+    "url": "https://www.meti.go.jp/shingikai/energy_environment/ccs_choki_roadmap/pdf/20230310_1.pdf",
+    "title": "CCS長期ロードマップ検討会 最終とりまとめ（令和5年3月）",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "2050年時点の年間CO2貯留量目安1.2億～2.4億トン、コスト削減目標、2030年までの事業開始方針",
+    "trust_tier": "government"
+  },
+  {
+    "id": "SRC09",
+    "source": "IEA（国際エネルギー機関）",
+    "url": "https://www.iea.org/reports/net-zero-by-2050",
+    "title": "Net Zero by 2050 / CCUS in Clean Energy Transitions",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "NZEシナリオにおけるCO2回収量：2030年約10～12億トン、2050年約62億トン（出典により7.6Gt等の幅あり）",
+    "trust_tier": "government"
+  },
+  {
+    "id": "SRC10",
+    "source": "IEEFA",
+    "url": "https://ieefa.org/resources/minimal-role-carbon-capture-utilization-and-storage-ccus-ieas-world-energy-outlook-2025",
+    "title": "Minimal role for carbon capture, utilization, and storage (CCUS) in IEA's World Energy Outlook 2025",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "IEA World Energy Outlook 2025では2050年排出削減達成手段に占めるCCUSの寄与度は5%未満とされ、近年のIEA見通しは下方修正傾向",
+    "trust_tier": "reputable_press"
+  },
+  {
+    "id": "SRC11",
+    "source": "GX DiG（グリーントランスフォーメーションメディア）",
+    "url": "https://green-transformation.jp/media/decarbonization/027/",
+    "title": "CCSとは｜仕組みやメリット、課題、日本の取り組み状況を解説",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "IEAの2050年世界CO2貯留量試算×日本の世界排出シェア（3.3%）から算出した「日本に必要な年間CCS量1.2～2.4億トン」という解説記事の計算（値自体はSRC08の政府目標と一致）",
+    "trust_tier": "other_web"
+  },
+  {
+    "id": "SRC12",
+    "source": "日本製鉄株式会社",
+    "url": "https://www.nipponsteel.com/common/secure/tech/report/pdf/422-03.pdf",
+    "title": "二酸化炭素貯留に適した鋼管材料（日本製鉄技報 第422号, 2023）",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "CO2圧入環境（水分存在下）は低pH腐食環境となり、13%Cr以上の高合金油井管需要が見込まれる",
+    "trust_tier": "official_company"
+  },
+  {
+    "id": "SRC13",
+    "source": "JFEスチール株式会社",
+    "url": "https://www.jfe-steel.co.jp/products/koukan/grade.php",
+    "title": "高強度・厚肉電縫鋼管 API X80グレード・コンダクター・ケーシング",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "ラインパイプ用高強度鋼管（API X80等）の製品仕様例",
+    "trust_tier": "official_company"
+  },
+  {
+    "id": "SRC14",
+    "source": "高圧ガス保安協会（KHK）",
+    "url": "https://www.khk.or.jp/Portals/0/khk/h2/committee/pipeline/02/20250219_pipeline_02-02-2.pdf",
+    "title": "CCSパイプラインに関する基準（KHKS）の原案の概要",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "国内向けCCSパイプライン基準の検討状況（2025年）",
+    "trust_tier": "industry_association"
+  },
+  {
+    "id": "SRC15",
+    "source": "日本エヌ・ユー・エス株式会社（JANUS）",
+    "url": "https://www.janus.co.jp/markets/environment/climate_change/ccus/5490/",
+    "title": "米国石油協会、CO2パイプライン輸送のための規格を公表",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "API RP1192によるCO2パイプライン性能要件、ラインパイプ材（API 5L/ISO3183）に求められる延性・低温靭性・耐座屈性",
+    "trust_tier": "other_web"
+  },
+  {
+    "id": "SRC16",
+    "source": "株式会社商船三井",
+    "url": "https://www.mol.co.jp/pr/2024/24108.html",
+    "title": "2028年以降の国際間大規模液化CO2海上輸送の実現に向けて標準化を進める低圧液化CO2輸送船の基本設計承認（AiP）を船級協会から取得",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "50,000㎥級・23,000㎥級の低圧液化CO2輸送船で、従来のニッケル鋼に代わる代替鋼材＋PWHT省略設計（ECA）を採用",
+    "trust_tier": "official_company"
+  },
+  {
+    "id": "SRC17",
+    "source": "日経ビジネス",
+    "url": "https://business.nikkei.com/atcl/gen/19/00159/122700196/",
+    "title": "川崎汽船や商船三井が狙う海の脱炭素インフラ CO2大量輸送船出航",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "船社7社（商船三井・日本郵船・川崎汽船等）と造船各社による液化CO2輸送船の標準仕様・標準船型確立に向けた共同検討",
+    "trust_tier": "reputable_press"
+  },
+  {
+    "id": "SRC18",
+    "source": "阪和興業株式会社",
+    "url": "https://www.hanwa.co.jp/business/steel/section2.html",
+    "title": "鉄鋼事業 鋼板部門",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "厚鋼板（厚板）の調達・販売、切断・曲げ・溶接・ショット処理等の加工、対象産業（造船・建設機械・産業機械・建築・橋梁・土木）",
+    "trust_tier": "official_company"
+  },
+  {
+    "id": "SRC19",
+    "source": "Wikipedia",
+    "url": "https://ja.wikipedia.org/wiki/%E9%98%AA%E5%92%8C%E8%88%88%E6%A5%AD",
+    "title": "阪和興業 - Wikipedia",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "阪和興業の概要（本社所在地：大阪市中央区、独立系鉄鋼・非鉄金属専門商社、多角化事業）",
+    "trust_tier": "other_web"
+  },
+  {
+    "id": "SRC20",
+    "source": "阪和興業株式会社",
+    "url": "https://www.hanwa.co.jp/ir/finance/segment.html",
+    "title": "事業セグメント情報",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "FY2025/3期セグメント別売上高（鉄鋼事業1兆1,129億円等）、FY2026/3期売上高2兆6,626億円",
+    "trust_tier": "official_company"
+  },
+  {
+    "id": "SRC21",
+    "source": "日刊産業新聞／japanmetal.com",
+    "url": "https://www.japanmetal.com/news-to20240123132076.html",
+    "title": "阪和興業の成長戦略 中期経営計画2025／鉄鋼事業戦略を聞く／加藤恭道会長／30年2000万トンへ国内外強化／CNは商機、冷鉄源取引に力注ぐ",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "阪和興業会長インタビュー：2030年鉄鋼取扱2,000万トン目標、カーボンニュートラルを商機と位置づけ冷鉄源取引を強化する方針（2024年1月時点の発言）",
+    "trust_tier": "reputable_press"
+  },
+  {
+    "id": "SRC22",
+    "source": "日本経済新聞（決算ページ）",
+    "url": "https://www.nikkei.com/nkd/company/kessan/?scode=8078",
+    "title": "阪和興業[8078] 株価・決算情報",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "中期経営計画2028における最終年度（2029年3月期）経常利益目標750億円（要一次資料確認）",
+    "trust_tier": "other_web"
+  },
+  {
+    "id": "SRC23",
+    "source": "GII（市場調査レポート販売サイト、原調査会社の要約転載）",
+    "url": "https://www.gii.co.jp/report/mama1811750-carbon-capture-utilization-storage-market-by.html",
+    "title": "炭素回収・利用・貯留市場｜市場規模 市場調査 予測 2030年まで",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "世界CCUS市場：2025年58.2億US$→2030年177.5億US$（CAGR 25.0%）との民間調査予測",
+    "trust_tier": "other_web"
+  },
+  {
+    "id": "SRC24",
+    "source": "atpress（プレスリリース配信、原調査会社の要約転載）",
+    "url": "https://www.atpress.ne.jp/news/3639012",
+    "title": "CCUSの市場規模、2030年には129億ドルへと増加する見通し",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "世界CCUS市場：2023年31億US$→2030年129億US$（CAGR 24.0%）との民間調査予測",
+    "trust_tier": "other_web"
+  },
+  {
+    "id": "SRC25",
+    "source": "NEWSCAST（プレスリリース配信、原調査会社の要約転載）",
+    "url": "https://newscast.jp/smart/news/6362859",
+    "title": "炭素回収、利用および貯留（CCUS）市場2035年に696億5000万米ドル規模へ急拡大",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "世界CCUS市場：2035年に696.5億US$規模（CAGR 28.1%）との民間調査予測",
+    "trust_tier": "other_web"
+  },
+  {
+    "id": "SRC26",
+    "source": "株式会社富士経済",
+    "url": "https://www.fuji-keizai.co.jp/press/detail.html?cid=24072&la=ja&la=en",
+    "title": "カーボンリサイクル・CO2削減関連の市場を調査",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "2050年のCO2削減関連世界市場は198兆1,855億円（2023年比17.3倍）との予測（発表年2024年と推定、要一次資料での日付確認）",
+    "trust_tier": "other_web"
+  },
+  {
+    "id": "SRC27",
+    "source": "東洋エンジニアリング株式会社",
+    "url": "https://www.toyo-eng.com/jp/ja/solution/ccus/",
+    "title": "CCUS（二酸化炭素回収・有効利用・貯留）",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "回収CO2と水電解水素からのe-メタノール合成実証プラント等、CCU（有効利用）の実例",
+    "trust_tier": "official_company"
+  },
+  {
+    "id": "SRC28",
+    "source": "商船三井（MOLサービスブログ）",
+    "url": "https://www.mol-service.com/ja/blog/ccus-2025-part2",
+    "title": "日本と世界のCCUS事例最前線！CO2を運ぶ商船三井の挑戦もご紹介",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "商船三井・出光興産・HIFによるCO2海上輸送を含む合成燃料（e-fuel）／合成メタノール（e-methanol）サプライチェーン共同開発のMOU締結",
+    "trust_tier": "official_company"
+  },
+  {
+    "id": "SRC29",
+    "source": "内閣官房 GX実行推進室",
+    "url": "https://www.cas.go.jp/jp/seisaku/gx_jikkou_kaigi/dai15/siryou1.pdf",
+    "title": "GXをめぐる情勢と今後の取組について（令和7年8月26日）",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "GX推進法に基づき2023～2032年度の10年間で官民GX投資150兆円超を目指す方針",
+    "trust_tier": "government"
+  },
+  {
+    "id": "SRC30",
+    "source": "資源エネルギー庁",
+    "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/ccus.html",
+    "title": "エネルギーの基礎用語～CO2を集めて埋めて役立てる「CCUS」",
+    "accessed_date": "2026-08-26",
+    "slide_id": null,
+    "claim": "CCUSの技術解説（回収・利用・貯留の各プロセスの一般向け説明）",
+    "trust_tier": "government"
+  }
+]
