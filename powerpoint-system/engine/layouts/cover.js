@@ -21,7 +21,7 @@ function render({ slide, spec, tokens, qa }) {
     fontFace: tokens.fonts.heading, fontSize: tokens.type_scale.title, bold: true,
     color: tokens.colors.text_on_primary.replace('#', ''), align: 'left', valign: 'bottom'
   });
-  qa.addBox(spec.id, { label: 'cover_title', role: 'title', x: m, y: h * 0.28, w: w - 2 * m, h: 1.6, text: spec.title, fontSize: tokens.type_scale.title, fontFace: tokens.fonts.heading });
+  qa.addBox(spec.id, { label: 'cover_title', role: 'title', x: m, y: h * 0.28, w: w - 2 * m, h: 1.6, text: spec.title, fontSize: tokens.type_scale.title, fontFace: tokens.fonts.heading, bold: true });
 
   if (c.subtitle) {
     slide.addText(c.subtitle, {

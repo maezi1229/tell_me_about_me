@@ -18,7 +18,7 @@ function render({ slide, spec, tokens, qa }) {
     fontFace: tokens.fonts.heading, fontSize: tokens.type_scale.h1, bold: true,
     color: tokens.colors.text_on_primary.replace('#', ''), align: 'left', valign: 'bottom'
   });
-  qa.addBox(spec.id, { label: 'overlay_title', role: 'title', x: tokens.slide.margin_in, y: h - barH, w: w - 2 * tokens.slide.margin_in, h: barH * 0.65, text: spec.title, fontSize: tokens.type_scale.h1, fontFace: tokens.fonts.heading });
+  qa.addBox(spec.id, { label: 'overlay_title', role: 'title', x: tokens.slide.margin_in, y: h - barH, w: w - 2 * tokens.slide.margin_in, h: barH * 0.65, text: spec.title, fontSize: tokens.type_scale.h1, fontFace: tokens.fonts.heading, bold: true });
   if (c.caption) {
     slide.addText(c.caption, {
       x: tokens.slide.margin_in, y: h - barH * 0.4, w: w - 2 * tokens.slide.margin_in, h: barH * 0.35,

@@ -28,7 +28,7 @@ function render({ slide, spec, tokens, qa }) {
     fontFace: tokens.fonts.heading, fontSize: tokens.type_scale.title * 0.75, bold: true,
     color: tokens.colors.text_on_primary.replace('#', ''), align: 'left', valign: 'top'
   });
-  qa.addBox(spec.id, { label: 'divider_title', role: 'title', x: m, y: h * 0.28 + (c.number ? 1.5 : 0.4), w: w - 2 * m, h: 1.4, text: spec.title, fontSize: tokens.type_scale.title * 0.75, fontFace: tokens.fonts.heading });
+  qa.addBox(spec.id, { label: 'divider_title', role: 'title', x: m, y: h * 0.28 + (c.number ? 1.5 : 0.4), w: w - 2 * m, h: 1.4, text: spec.title, fontSize: tokens.type_scale.title * 0.75, fontFace: tokens.fonts.heading, bold: true });
 }
 
 module.exports = { render };

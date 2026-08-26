@@ -19,8 +19,10 @@ function addTitle(slide, tokens, titleText, qa, slideId, opts = {}) {
   const m = tokens.slide.margin_in;
   const w = tokens.slide.width_in - 2 * m;
   const fontSize = opts.fontSize || tokens.type_scale.h1;
-  const maxWidthForEstimate = w - 0.1;
-  const lines = Math.min(3, Math.max(1, estimateLines(titleText, fontSize, maxWidthForEstimate)));
+  // Extra safety margin beyond the box's own width: PptxGenJS/PowerPoint apply
+  // internal text insets, and this title is always bold (see textMetrics.js).
+  const maxWidthForEstimate = (w - 0.15) * 0.95;
+  const lines = Math.min(3, Math.max(1, estimateLines(titleText, fontSize, maxWidthForEstimate, true)));
   const lineHeightIn = (fontSize / 72) * 1.25;
   const boxH = Math.max(0.55, lines * lineHeightIn + 0.15);
 
@@ -44,7 +46,8 @@ function addTitle(slide, tokens, titleText, qa, slideId, opts = {}) {
     x: m, y: m, w, h: boxH,
     text: titleText,
     fontSize,
-    fontFace: tokens.fonts.heading
+    fontFace: tokens.fonts.heading,
+    bold: true
   });
 
   // accent rule under the title

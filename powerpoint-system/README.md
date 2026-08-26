@@ -102,3 +102,23 @@ If `render` fails with `Error: source file could not be loaded` for *every*
 file (even a plain .txt), LibreOffice's application components aren't
 installed — only `libreoffice-core`/`libreoffice-common`. Fix:
 `apt-get install -y libreoffice-impress`.
+
+## Known rendering-fidelity caveat (bold reversed-color text)
+
+Found while QA-reviewing a real deck: bold white-on-dark-navy text (e.g. a
+`comparison` column's `emphasize: true` header, or a `cover`/`section_divider`
+title) can render with fine glyph details lost in this LibreOffice + fallback
+Japanese font pipeline — specifically, a capital "J" lost its hook and became
+indistinguishable from "I", turning "JOGMEC" into "IOGMEC" on screen. The same
+text in regular (non-bold) weight or on a light background rendered correctly.
+This is a rendering-environment artifact (missing the real "Yu Gothic" font,
+LibreOffice's bold-synthesis on its substitute), not a `slides.yaml` content
+bug — but since this pipeline's rendered PNGs are the only QA evidence
+available before a human opens the real .pptx, treat it as real:
+- Avoid placing acronyms/proper nouns with easily-confused glyph pairs (I/J,
+  O/0, l/1) inside bold, reversed-color (white-on-dark) text if there's a
+  lighter-weight or non-reversed place to put the same information instead.
+- Always do a final visual proof of the actual `.pptx` in real PowerPoint
+  (with the real fonts named in `design_system.json` installed) before
+  distributing — this render pipeline is a safety net, not a substitute for
+  that.

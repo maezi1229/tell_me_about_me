@@ -32,9 +32,11 @@ function runMechanicalQa(projectDir) {
   const findings = [];
 
   // --- overflow: does the estimated text block exceed its own box? ---
+  // Width is shrunk 5% to approximate PptxGenJS/PowerPoint's internal text
+  // insets, which the box's own recorded w/h don't account for.
   for (const box of boxes) {
     if (!box.text) continue;
-    const estimatedH = estimateTextHeightIn(box.text, box.fontSize, box.w, 1.25);
+    const estimatedH = estimateTextHeightIn(box.text, box.fontSize, box.w * 0.95, 1.25, !!box.bold);
     if (estimatedH > box.h * 1.08) {
       findings.push({
         slide_id: box.slideId,

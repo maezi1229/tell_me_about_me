@@ -1,18 +1,286 @@
-# Content layer only — no colors/coordinates (those live in design_system.json
-# and engine/layouts/*.js). Written by the Slide Designer once outline.md is
-# approved. See ../../schemas/slides.schema.json for the full contract and
-# ../../engine/layouts/ for the field shape each visual_type expects.
-
-deck_title: "(untitled)"
-subtitle: null
-author: null
-date: null
+deck_title: "CCUS × 阪和興業 ご説明資料"
+subtitle: "厚板・加工商社としての介在余地を検討するための叩き台"
+author: "阪和興業株式会社（社内検討用ドラフト）"
+date: "2026年8月"
 
 slides:
   - id: S01_COVER
     visual_type: cover
-    title: "(deck title placeholder — replace before building)"
+    title: "CCUS × 阪和興業 ご説明資料"
+    purpose: "場を作り、本資料が『叩き台』であることの期待値を合わせる"
     content:
-      subtitle: null
-      author: null
-      date: null
+      subtitle: "厚板・加工商社としての介在余地を検討するための叩き台"
+      author: "阪和興業株式会社（社内検討用ドラフト）"
+      date: "2026年8月"
+    speaker_notes:
+      purpose: "本資料は公開情報ベースの叩き台であり、社内の非公開情報を踏まえた最終判断はこれから、という前提を最初に共有する"
+      talking_points: ["本日は①技術概要②プレイヤー③市場④介在価値⑤成果時期⑥数値目標の6点でご説明します"]
+      anticipated_questions: []
+      transition: "まず目次を確認します"
+      sources: []
+
+  - id: S02_AGENDA
+    visual_type: agenda
+    title: "本日お伝えする6つのこと"
+    purpose: "全体像を共有する"
+    content:
+      items:
+        - "CCUSとは何か、なぜ今注目されているか"
+        - "どんなプレイヤーが参画しているか、具体的な案件"
+        - "今後、市場はどうなっていくか"
+        - "阪和としての介在価値、どこで携われるか"
+        - "厚板としていつ成果が出せるか、横展開の可能性"
+        - "具体的な数値目標"
+    speaker_notes:
+      purpose: "聞き手に地図を渡す"
+      talking_points: ["ユーザーからいただいた6項目の構成そのままです"]
+      anticipated_questions: []
+      transition: "まずCCUSという技術そのものから確認します"
+      sources: []
+
+  - id: S03_CCUS_OVERVIEW
+    visual_type: process
+    title: "CCUSとは、CO2を「集めて・使うか埋めるか」する技術群である"
+    purpose: "①技術の定義を揃える"
+    content:
+      steps:
+        - label: "分離回収 (Capture)"
+          description: "発電所・工場等の排ガスからCO2を分離・回収する"
+        - label: "有効利用 (Utilization)"
+          description: "回収したCO2を燃料・化学品等の原料として活用する"
+        - label: "貯留 (Storage)"
+          description: "帯水層・枯渇油ガス田等の地中へ圧入し長期間貯留する"
+    speaker_notes:
+      purpose: "CCUSの定義をゼロから揃える"
+      talking_points: ["環境省・資源エネルギー庁は2050年カーボンニュートラル実現に必要な技術と位置づけている"]
+      anticipated_questions: ["CCSとCCUSの違いは？"]
+      transition: "なぜ今このタイミングで盛り上がっているのかを見ていきます"
+      sources: ["F01", "F02"]
+
+  - id: S04_WHY_NOW
+    visual_type: comparison
+    title: "CCS事業法とGX投資により、CCUSは「政策論」から「個別事業」の段階に入った"
+    purpose: "①なぜ今盛り上がっているかを政策面から説明する"
+    content:
+      columns:
+        - heading: "CCS事業法（2024年成立）"
+          items: ["CO2地中貯留の事業許可制度を新設", "2030年までの民間事業開始に向けた法整備"]
+        - heading: "GX推進法・GX投資"
+          items: ["2023〜2032年度で官民150兆円超の投資方針", "CCUSはGX投資対象分野の一つ"]
+        - heading: "先進的CCS事業（METI）"
+          items: ["経済産業省・JOGMECが2024年6月に9案件を選定", "2030年度までの事業開始が目標"]
+          emphasize: true
+      insight: "3つの政策が同時並行で動き出し、CCUSは検討段階から個別事業の実行段階へ移行しつつある。"
+    speaker_notes:
+      purpose: "盛り上がりの背景を法制度・予算・個別事業の3層で説明する"
+      talking_points: ["法整備→投資方針→個別事業選定、という順で実行段階に入っている"]
+      emphasis: "先進的CCS事業の9案件選定"
+      anticipated_questions: ["CCS事業法は具体的に何を許可する制度か"]
+      transition: "一方で、国際的にはCCUSへの期待値にも変化が出ています"
+      sources: ["F03", "F04", "F05"]
+
+  - id: S05_GLOBAL_CONTEXT
+    visual_type: big_number
+    title: "ただしCCUSは「不可欠だが主役ではない」という国際的な位置づけの変化もある"
+    purpose: "①期待と現実のバランスを示す"
+    content:
+      number: "5%未満"
+      unit: null
+      caption: "IEA『World Energy Outlook 2025』が示す、2050年排出削減達成手段に占めるCCUSの寄与度（IEEFA解説記事に基づく）"
+      insight: "IEAネットゼロシナリオでは2050年に年間約62億トンの回収を見込む一方、直近の見通しではCCUSの相対的な役割を下方修正する分析もある。過度な期待も過小評価も避け、動向を注視する必要がある。"
+    speaker_notes:
+      purpose: "CCUSへの期待が一枚岩ではないことを共有し、次章のプレイヤー・市場の話に慎重な前提を置く"
+      talking_points: ["『CCUSがあれば脱炭素は解決する』という単純化は避けるべき"]
+      anticipated_questions: ["IEAの見通しが下がっているなら投資する意味はあるのか"]
+      transition: "とはいえ、実際に動いているプレイヤーと案件を見てみます"
+      sources: ["F13", "F14"]
+
+  - id: S06_PLAYERS_OVERVIEW
+    visual_type: kpi_cards
+    title: "2030年度までに国内外9案件・年間2,000万トンのCCS事業が動き出す"
+    purpose: "②実行段階のプレイヤー全体像を示す"
+    content:
+      cards:
+        - { label: "選定案件数", value: "9案件", delta: "国内5 + 海外4", deltaDirection: "flat" }
+        - { label: "合計CO2貯留目標（年間）", value: "約2,000万トン", delta: "2030年度までの事業開始目標", deltaDirection: "up" }
+        - { label: "参画産業", value: "多業種", delta: "発電・石油精製・鉄鋼・化学・紙パルプ・セメント等", deltaDirection: "flat" }
+      insight: "政策が具体的な事業の選定・実行段階に入ったことを示す、最も明確なシグナル。"
+    speaker_notes:
+      purpose: "個別案件の詳細に入る前に全体像を掴んでもらう"
+      talking_points: ["鉄鋼業も排出事業者として複数案件に含まれている点に注目"]
+      anticipated_questions: []
+      transition: "個別の案件を見てみます"
+      sources: ["F05", "F06"]
+
+  - id: S07_PROJECTS
+    visual_type: table
+    title: "苫小牧・東新潟・首都圏・マレー半島沖の4案件に、鉄鋼業も既に参画している"
+    purpose: "②具体的な案件を提示する"
+    content:
+      headers: ["案件名", "参画企業（確認できた範囲）", "貯留対象・規模"]
+      rows:
+        - ["苫小牧地域CCS事業", "JAPEX、出光興産、北海道電力", "地域内帯水層、年間約150万〜200万トン"]
+        - ["東新潟地域CCS事業", "JAPEX、東北電力、三菱瓦斯化学、北越コーポレーション", "県内既存油ガス田、年間約140万トン"]
+        - ["首都圏CCS事業", "INPEX、日本製鉄、関東天然瓦斯開発", "千葉県外房沖海域帯水層、年間約140万トン"]
+        - ["マレー半島沖北部CCS事業（海外）", "三菱商事、ENEOS、JX石油開発、JFEスチール、コスモ石油、日本触媒、Petronas CCS Solutions", "マレーシア沖 減退油ガス田、年間約300万トン"]
+      insight: "※JOGMEC一次資料への直接アクセスができておらず、検索結果の合成に基づく。社内資料化前に原本での再確認を推奨。"
+    speaker_notes:
+      purpose: "実名の案件・企業で具体性を持たせる"
+      talking_points: ["首都圏CCS事業には日本製鉄が排出事業者として直接参画している"]
+      emphasis: "日本製鉄の参画（鉄鋼業自体がCCUSの当事者になっている）"
+      anticipated_questions: ["この数字はどこまで確定情報か"]
+      transition: "貯留だけでなく、輸送側でも動きがあります"
+      sources: ["F07", "F08", "F09", "F10"]
+
+  - id: S08_SHIPPING
+    visual_type: two_column
+    title: "液化CO2輸送でも、船社・造船が2028年以降を見据えて動き始めている"
+    purpose: "②輸送インフラ側の動きを補足する"
+    content:
+      body:
+        - "商船三井・日本郵船・川崎汽船を含む船社7社と造船各社が、2028年以降の国際間大規模液化CO2海上輸送の実現に向け標準船型の共同検討を開始（2024年8月）"
+        - "商船三井は50,000㎥級・23,000㎥級の低圧液化CO2輸送船で船級協会からAiP（基本設計承認）を取得済み"
+        - "液化CO2はLNG（-162℃）ほどの極低温を要さないため、9%ニッケル鋼のような超低温材が必須でなく、鋼材選定の自由度・コスト最適化の余地がある"
+      image:
+        path: null
+        alt: "液化CO2輸送船の標準船型イメージ（プレースホルダー）"
+      image_side: "right"
+    speaker_notes:
+      purpose: "厚板ビジネスに近い輸送インフラの動きを共有する"
+      talking_points: ["輸送船向け鋼材の選定余地がある、という点は5章の伏線"]
+      anticipated_questions: []
+      transition: "では市場全体はどう見られているのでしょうか"
+      sources: ["F19", "F20"]
+
+  - id: S09_MARKET_RANGE
+    visual_type: comparison
+    title: "世界の市場規模予測は調査会社により2〜3倍の幅があり、単一の数字を鵜呑みにできない"
+    purpose: "③マーケット感を示しつつ、数字の扱い方に注意を促す"
+    content:
+      columns:
+        - heading: "予測A"
+          items: ["2023年 31億USドル", "→2030年 129億USドル", "CAGR 24.0%"]
+        - heading: "予測B"
+          items: ["2024年 46.1億USドル", "→2030年 152.1億USドル", "CAGR 22.0%"]
+        - heading: "予測C"
+          items: ["2025年 58.2億USドル", "→2030年 177.5億USドル", "CAGR 25.0%"]
+      insight: "調査対象範囲・前提シナリオの違いにより数字は大きく異なる。資料で使う際は必ず出典・前提条件を併記する。"
+    speaker_notes:
+      purpose: "単一の市場規模数値を鵜呑みにしない姿勢を共有する"
+      talking_points: ["どの数字を『公式見解』として使うかは合意が必要"]
+      anticipated_questions: ["結局どの数字を採用すればよいのか"]
+      transition: "日本国内の長期目標も確認します"
+      sources: ["F15"]
+
+  - id: S10_JAPAN_ROADMAP
+    visual_type: chart
+    title: "日本は2050年に年間1.2〜2.4億トンの貯留を目指し、コストを現在の数分の1にする計画"
+    purpose: "③長期の市場ポテンシャルを示す"
+    content:
+      chart_type: bar
+      categories: ["2030年度（事業開始目標）", "2050年（目標レンジ下限）", "2050年（目標レンジ上限）"]
+      series:
+        - name: "年間CO2貯留量（百万トン）"
+          values: [20, 120, 240]
+      insight: "2030年度の先進的CCS事業（9案件計2,000万トン）は、2050年目標（1.2億〜2.4億トン）への最初のステップに過ぎない。あわせて分離回収コストを2023年比4分の1以下にする目標も掲げられている。"
+    speaker_notes:
+      purpose: "短期(2030)と長期(2050)の目標のギャップを見せる"
+      talking_points: ["2030年から2050年までの20年間、貯留量を毎年600万〜1,200万トンずつ積み増す必要がある計算"]
+      anticipated_questions: []
+      transition: "この技術要件が、厚板・厚肉鋼管とどう関わるかを見ていきます"
+      sources: ["F06", "F11", "F12"]
+
+  - id: S11_MATERIAL_REQUIREMENTS
+    visual_type: matrix
+    title: "パイプライン・貯留設備・輸送船はいずれも耐食性・低温靭性が求められる厚板／厚肉鋼管領域である"
+    purpose: "④⑤材料要件と阪和の技術的接点を示す"
+    content:
+      x_axis_label: "厚板・厚肉鋼管が関わる4つの応用領域"
+      quadrants:
+        - heading: "CO2パイプライン"
+          items: ["API RP1192準拠", "API 5L/ISO3183: 強度＋延性＋低温靭性＋耐座屈性"]
+        - heading: "CO2圧入・貯留設備（鋼管）"
+          items: ["水分存在下では低pH腐食環境", "13%Cr以上の高合金鋼が必要"]
+        - heading: "液化CO2輸送船"
+          items: ["LNG船ほどの極低温は不要", "代替鋼材＋PWHT省略設計（ECA）の採用例あり"]
+        - heading: "共通する要求特性"
+          items: ["耐食性", "低温靭性", "規格適合（API/ISO/KHK）"]
+    speaker_notes:
+      purpose: "厚板・厚肉鋼管が絡む具体的な技術要件を整理する"
+      talking_points: ["いずれも既存の造船・プラント向け厚板ビジネスと技術的に地続き"]
+      anticipated_questions: ["これらの鋼材は今すぐ量産できるのか"]
+      transition: "ここから、阪和として何が言えるかに入ります"
+      sources: ["F17", "F18", "F19"]
+
+  - id: S12_HANWA_VALUE
+    visual_type: two_column
+    title: "阪和興業の厚板調達・加工・品質保証機能は、CCUS向け高機能鋼材でも活きる余地がある（要検証の仮説）"
+    purpose: "④介在価値を提示する（Fact/Inferenceを明確に区別）"
+    content:
+      body:
+        - "Fact: 阪和興業は国内外の製鉄所から厚板を調達し、切断・曲げ・溶接・ショット処理等の加工を施す鋼板事業を持つ（FY2025/3期 鉄鋼事業売上高1兆1,129億円、全社の46%）"
+        - "Inference: 鋼材商社は一般に、規格適合対応・小ロット短納期加工・在庫/物流/与信機能でメーカーと需要家を仲介する。CO2輸送用鋼管や貯留設備・輸送船向け厚板でも同種の機能が価値を持ちうると考えられる"
+        - "要確認: 実際にどの案件・工程に食い込めるかは社内の非公開情報（既存取引先、加工能力、投資余地）に依存する。本ページはあくまで仮説の叩き台"
+      image:
+        path: null
+        alt: "厚板の調達〜加工〜納入フロー（イメージ）"
+      image_side: "right"
+    speaker_notes:
+      purpose: "介在価値の仮説を、事実と推論を分けて誠実に提示する"
+      talking_points: ["ここは特に社内の追加情報で上書きされるべきページ"]
+      emphasis: "Fact/Inferenceの区別"
+      anticipated_questions: ["具体的にどの案件に営業をかけるのか"]
+      transition: "では、いつ頃成果が見えてくるのかを整理します"
+      sources: ["F21", "F22", "F23", "F28"]
+
+  - id: S13_TIMING
+    visual_type: timeline
+    title: "「いつ・どの規模で受注が立ち上がるか」は公開情報からは未確定 — 政府スケジュールとの突き合わせが必要"
+    purpose: "⑤成果時期・横展開の前提となる外部スケジュールを示す"
+    content:
+      milestones:
+        - { date: "2024年", label: "CCS事業法成立／先進的CCS事業9案件選定", done: true }
+        - { date: "2030年度", label: "政府目標：CCS事業（9案件）の貯留開始", done: false }
+        - { date: "2030年代", label: "液化CO2輸送船の本格運航開始（船社7社検討ベース）", done: false }
+        - { date: "2050年", label: "政府目標：年間1.2〜2.4億トンの貯留", done: false }
+      note: "阪和興業としての受注がいつ・どの規模で立ち上がるかを示す公開の市場予測は本調査では確認できていない。上記は業界全体の政策スケジュールであり、自社の営業計画との突き合わせが必要。洋上風力・LNG等への横展開可能性は推論段階。"
+    speaker_notes:
+      purpose: "『成果時期』を問われた際の誠実な現状認識を共有する"
+      talking_points: ["政府目標はあくまで外部環境。自社の受注時期とは別物として扱う"]
+      anticipated_questions: ["社内で独自に営業パイプラインを積み上げる必要があるということか"]
+      transition: "最後に、数値目標の整理をします"
+      sources: ["F03", "F05", "F11", "F20"]
+
+  - id: S14_TARGETS
+    visual_type: kpi_cards
+    title: "数値目標は、外部環境（政府・市場）と自社目標を切り分けて確認する必要がある"
+    purpose: "⑥具体的な数値目標を整理する"
+    content:
+      cards:
+        - { label: "2030年度 CCS事業 合計貯留目標（年間）", value: "約2,000万トン", delta: "政府目標（9案件計）", deltaDirection: "flat" }
+        - { label: "2050年 CCS貯留量目標（政府・年間）", value: "1.2〜2.4億トン", delta: "経産省ロードマップ", deltaDirection: "flat" }
+        - { label: "阪和興業 CCUS関連 数値目標", value: "未設定（要記入）", delta: "公開情報なし。社内でご提供ください", deltaDirection: "flat" }
+      insight: "政府・市場の外部数値（Fact）と、阪和興業固有の目標（未確定・要記入）を混同しないことが重要。"
+    speaker_notes:
+      purpose: "数値の性質（外部環境か自社目標か）を混同させない"
+      talking_points: ["3枚目のカードは意図的に空欄にしている。ここに何を入れるかが次のステップ"]
+      anticipated_questions: ["自社目標はいつまでに決める必要があるか"]
+      transition: "最後に、次の一歩をまとめます"
+      sources: ["F06", "F11", "F30"]
+
+  - id: S15_NEXT_STEPS
+    visual_type: summary
+    title: "次の一歩：①「阪和」の同定、②内部情報の確認、③一次資料での再検証を"
+    purpose: "意思決定・次のアクションを依頼する"
+    content:
+      recap:
+        - "CCUSは政策論から個別事業の実行段階に移行しつつあり、厚板・厚肉鋼管の技術要件（耐食性・低温靭性）は既存ビジネスと技術的に地続きである"
+        - "一方、個別案件の参画企業・数量、世界市場規模、阪和興業固有の介在価値・数値目標には、それぞれ異なる粒度の『未確認』『未確定』が残っている"
+        - "本資料は叩き台であり、次の3点の確認・確定が精度向上に不可欠"
+      action: "①『阪和』の同定の最終確認、②社内の実際の介在余地・数値目標のご提供、③個別案件情報の一次資料（JOGMEC等）での再確認、の3点についてご対応をお願いします"
+    speaker_notes:
+      purpose: "叩き台であることを再確認し、具体的な宿題を持ち帰ってもらう"
+      talking_points: ["次回はここでいただいた情報を反映した第2版を用意します"]
+      anticipated_questions: []
+      transition: null
+      sources: []
