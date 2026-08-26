@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "slides",
+  "description": "Content layer for one deck (parsed from slides.yaml). Purely 'what to say' — no colors/coordinates, those live in design_system.json and engine/layouts/*.js.",
+  "type": "object",
+  "required": ["deck_title", "slides"],
+  "properties": {
+    "deck_title": { "type": "string" },
+    "subtitle": { "type": ["string", "null"] },
+    "author": { "type": ["string", "null"] },
+    "date": { "type": ["string", "null"] },
+    "slides": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "visual_type", "title", "content"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^S[0-9]{2}_[A-Z0-9_]+$" },
+          "visual_type": {
+            "type": "string",
+            "enum": [
+              "cover", "section_divider", "agenda", "two_column", "big_number",
+              "kpi_cards", "comparison", "chart", "timeline", "process",
+              "matrix", "full_image", "quote", "table", "summary"
+            ]
+          },
+          "title": { "type": "string", "description": "Must be the slide's conclusion, not a topic label." },
+          "purpose": { "type": ["string", "null"], "description": "What the audience should understand/decide after this slide." },
+          "content": { "type": "object", "description": "visual_type-specific fields; see engine/layouts/<visual_type>.js for the exact shape it reads." },
+          "speaker_notes": {
+            "type": "object",
+            "properties": {
+              "purpose": { "type": "string" },
+              "talking_points": { "type": "array", "items": { "type": "string" } },
+              "emphasis": { "type": ["string", "null"] },
+              "anticipated_questions": { "type": "array", "items": { "type": "string" } },
+              "transition": { "type": ["string", "null"] },
+              "sources": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

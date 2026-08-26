@@ -1,0 +1,18 @@
+# Content layer only — no colors/coordinates (those live in design_system.json
+# and engine/layouts/*.js). Written by the Slide Designer once outline.md is
+# approved. See ../../schemas/slides.schema.json for the full contract and
+# ../../engine/layouts/ for the field shape each visual_type expects.
+
+deck_title: "(untitled)"
+subtitle: null
+author: null
+date: null
+
+slides:
+  - id: S01_COVER
+    visual_type: cover
+    title: "(deck title placeholder — replace before building)"
+    content:
+      subtitle: null
+      author: null
+      date: null

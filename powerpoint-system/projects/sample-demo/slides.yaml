@@ -1,0 +1,270 @@
+deck_title: "CloudDesk Analytics ご提案 — Meridian Logistics様向け"
+subtitle: "現場データを、明日の意思決定に変える"
+author: "CloudDesk Analytics株式会社"
+date: "2026年8月26日"
+
+slides:
+  - id: S01_COVER
+    visual_type: cover
+    title: "CloudDesk Analytics ご提案"
+    purpose: "場を作り、期待値を合わせる"
+    content:
+      subtitle: "現場データを、明日の意思決定に変える"
+      author: "CloudDesk Analytics株式会社 営業本部"
+      date: "2026年8月26日"
+    speaker_notes:
+      purpose: "自己紹介と本日のゴール（6週間パイロットへの合意）を明確にする"
+      talking_points: ["本日は20分でご説明し、15分質疑応答のお時間をいただきます", "ゴールは今日この場での即決ではなく、パイロット実施の合意です"]
+      anticipated_questions: []
+      transition: "まず本日お伝えする内容を目次でご確認ください"
+      sources: []
+
+  - id: S02_AGENDA
+    visual_type: agenda
+    title: "本日お伝えする5つのこと"
+    purpose: "全体像を共有し、聞く準備をしてもらう"
+    content:
+      items:
+        - "現状の課題：コスト増加の実態"
+        - "課題の構造：見えていない情報"
+        - "解決策：CloudDesk Analyticsの仕組み"
+        - "実績：類似拠点での成果"
+        - "進め方：6週間パイロットのご提案"
+    speaker_notes:
+      purpose: "聞き手に地図を渡す"
+      talking_points: ["課題→解決策→実績→進め方の順でお話しします"]
+      anticipated_questions: []
+      transition: "まず現状の課題からお話しします"
+      sources: []
+
+  - id: S03_SECTION_PROBLEM
+    visual_type: section_divider
+    title: "課題編"
+    purpose: "話題の切り替えを明示する"
+    content:
+      number: "01"
+      kicker: "PROBLEM"
+    speaker_notes:
+      purpose: "課題パートへの移行"
+      talking_points: []
+      anticipated_questions: []
+      transition: "まず数字で現状を確認します"
+      sources: []
+
+  - id: S04_PROBLEM_TREND
+    visual_type: chart
+    title: "出荷量が伸びるほど1件あたりコストが悪化している"
+    purpose: "現状を定量的に理解してもらう"
+    content:
+      chart_type: bar
+      categories: ["2025 Q1", "2025 Q2", "2025 Q3", "2025 Q4"]
+      series:
+        - name: "四半期出荷件数（千件）"
+          values: [1200, 1350, 1500, 1720]
+      insight: "出荷件数は4四半期で+43%増加した一方、現場人員はほぼ横ばい。この差が1件あたりコスト上昇（過去3年で+18%、demo値）の主因と推測される。"
+    speaker_notes:
+      purpose: "課題を数字で共有する"
+      talking_points: ["出荷件数は右肩上がりだが、これは良いニュースであると同時に現場負荷の増大でもある", "人員はほぼ横ばいのため、1件あたりの処理効率が低下している"]
+      emphasis: "+43%という伸び率"
+      anticipated_questions: ["この数値の出典は？"]
+      transition: "では、なぜこの差が生まれているのかを見ていきます"
+      sources: ["F01", "F05"]
+
+  - id: S05_ROOT_CAUSE
+    visual_type: comparison
+    title: "見えている情報と見えていない情報の間に原因がある"
+    purpose: "課題の構造を理解してもらう"
+    content:
+      columns:
+        - heading: "現在見えている情報"
+          items: ["日次の出荷件数合計", "月次の人件費総額", "拠点全体の稼働率"]
+        - heading: "実は見えていない情報"
+          items: ["時間帯別のボトルネック", "ドック待ち時間の内訳", "どの工程が遅延の起点か"]
+          emphasize: true
+      insight: "集計された数字はあるが、原因を特定できる粒度のデータがない。これが意思決定を遅らせている。"
+    speaker_notes:
+      purpose: "「なんとなく忙しい」を構造化する"
+      talking_points: ["合計値だけでは対策が打てない", "必要なのは粒度の細かいデータ"]
+      anticipated_questions: []
+      transition: "この背景にはもう一つ、市場環境の変化があります"
+      sources: []
+
+  - id: S06_WHY_NOW
+    visual_type: two_column
+    title: "需要変動が激しい今こそ現場の可視化が競争力になる"
+    purpose: "背景認識を共有する"
+    content:
+      body:
+        - "EC化の進展により、出荷量の波が読みにくくなっている"
+        - "人手不足により、増員による対応には限界がある"
+        - "だからこそ、今ある人員でボトルネックを特定し解消することが最短の打ち手になる"
+      image:
+        path: null
+        alt: "需要変動と労働力のギャップを示す模式図（イメージ）"
+      image_side: "right"
+    speaker_notes:
+      purpose: "「なぜ今なのか」を腹落ちさせる"
+      talking_points: ["増員に頼れない前提での効率化が求められている"]
+      anticipated_questions: []
+      transition: "ここで、私たちのアプローチの位置づけをご説明します"
+      sources: []
+
+  - id: S07_POSITIONING
+    visual_type: matrix
+    title: "簡易ダッシュボードでは検知できない領域を私たちは狙う"
+    purpose: "差別化を明確にする"
+    content:
+      x_axis_label: "左：可視化のみ　→　右：原因特定まで踏み込む"
+      quadrants:
+        - heading: "汎用BIツール"
+          items: ["導入は容易", "原因分析は手動"]
+        - heading: "CloudDesk Analytics"
+          items: ["48時間で接続完了", "ボトルネックを自動検知"]
+        - heading: "紙・Excel運用"
+          items: ["柔軟だが属人的", "リアルタイム性なし"]
+        - heading: "大規模ERP追加モジュール"
+          items: ["高機能だが導入に半年〜"]
+    speaker_notes:
+      purpose: "競合との違いを一目で示す"
+      talking_points: ["私たちは「早く」「原因まで」の両立を狙っている"]
+      anticipated_questions: ["既存のBIツールと何が違うのか"]
+      transition: "具体的な仕組みをご説明します"
+      sources: []
+
+  - id: S08_SOLUTION
+    visual_type: process
+    title: "導入から改善提案までを4ステップで完結"
+    purpose: "解決策の全体像を理解してもらう"
+    content:
+      steps:
+        - label: "データ接続"
+          description: "既存WMS・シフト表と連携（改修不要）"
+        - label: "ボトルネック検知"
+          description: "時間帯・工程別に自動で特定"
+        - label: "改善提案"
+          description: "優先度付きで具体策を提示"
+        - label: "継続モニタリング"
+          description: "効果を数値で継続確認"
+    speaker_notes:
+      purpose: "導入の心理的ハードルを下げる"
+      talking_points: ["既存システムの改修が不要な点を強調する"]
+      anticipated_questions: ["導入にどれくらい時間がかかるか"]
+      transition: "実際の画面イメージをご覧ください"
+      sources: ["F02"]
+
+  - id: S09_PRODUCT_SHOT
+    visual_type: full_image
+    title: "現場はそのままに、見える化だけを追加"
+    purpose: "製品イメージを直感的に伝える"
+    content:
+      image:
+        path: null
+        alt: "製品ダッシュボード画面イメージ（プレースホルダー）"
+      caption: "実際の画面イメージ（デモ用プレースホルダー）"
+    speaker_notes:
+      purpose: "抽象的な説明を具体化する"
+      talking_points: ["実際のダッシュボード画面を見せながら説明する（本番では実画面キャプチャに差し替え）"]
+      anticipated_questions: []
+      transition: "では実際の効果を、類似拠点の実績でご紹介します"
+      sources: []
+
+  - id: S10_EVIDENCE
+    visual_type: kpi_cards
+    title: "類似規模の物流拠点で手待ち時間23%削減を実証"
+    purpose: "実績による裏付けを示す"
+    content:
+      cards:
+        - { label: "手待ち時間削減", value: "-23%", delta: "6週間で達成", deltaDirection: "up" }
+        - { label: "データ接続完了まで", value: "48時間", delta: "改修なし", deltaDirection: "flat" }
+        - { label: "パイロット期間", value: "6週間", delta: "本格導入前に効果検証", deltaDirection: "flat" }
+      insight: "小さく始めて数字で効果を確認できることが、この進め方の最大の利点です。"
+    speaker_notes:
+      purpose: "数字で信頼を積み上げる"
+      talking_points: ["これは類似規模拠点での実績（デモ用の例）です"]
+      emphasis: "-23%"
+      anticipated_questions: ["御社の場合も同程度の効果が出るか"]
+      transition: "実際に導入いただいたお客様の声もご紹介します"
+      sources: ["F03", "F04"]
+
+  - id: S11_TESTIMONIAL
+    visual_type: quote
+    title: "導入企業様の声（デモ用の例）"
+    purpose: "信頼を獲得する"
+    content:
+      quote: "導入後3週間で、どの工程がボトルネックなのか初めて数字で説明できるようになりました。"
+      attribution: "物流拠点 運営責任者様（デモ用の例）"
+    speaker_notes:
+      purpose: "第三者の声で説得力を補強する"
+      talking_points: []
+      anticipated_questions: []
+      transition: "それでは具体的な進め方をご説明します"
+      sources: ["F03"]
+
+  - id: S12_PLAN
+    visual_type: timeline
+    title: "6週間で成果を確認できるスケジュールを用意"
+    purpose: "具体的な進め方を提示する"
+    content:
+      milestones:
+        - { date: "Week 1", label: "キックオフ・データ接続", done: false }
+        - { date: "Week 2-3", label: "ベースライン分析", done: false }
+        - { date: "Week 4-5", label: "改善施策の試行", done: false }
+        - { date: "Week 6", label: "成果レビュー・本格導入判断", done: false }
+    speaker_notes:
+      purpose: "パイロットの進め方を具体的にイメージしてもらう"
+      talking_points: ["Week1でのデータ接続が最初のマイルストーン"]
+      anticipated_questions: ["現場の負担はどの程度か"]
+      transition: "パイロットで提供する内容を詳細に確認します"
+      sources: []
+
+  - id: S13_DELIVERABLES
+    visual_type: table
+    title: "パイロットで提供する内容はこちらの通り"
+    purpose: "詳細な提供範囲を明示する"
+    content:
+      headers: ["項目", "内容", "備考"]
+      rows:
+        - ["データ接続", "WMS・シフト表との連携設定", "既存システム改修なし"]
+        - ["分析レポート", "週次ボトルネックレポート", "PDF/ダッシュボード両対応"]
+        - ["改善提案", "優先度付きアクションリスト", "隔週で更新"]
+        - ["サポート", "専任担当者によるオンライン支援", "週1回定例MTG"]
+      insight: "パイロット費用に全項目が含まれ、追加費用は発生しません（demo値）。"
+    speaker_notes:
+      purpose: "「何が含まれるか」の疑問を解消する"
+      talking_points: []
+      anticipated_questions: ["追加費用は発生しないか"]
+      transition: "最後に、投資規模についてご説明します"
+      sources: []
+
+  - id: S14_INVESTMENT
+    visual_type: big_number
+    title: "初期投資はパイロット期間中¥1.2M"
+    purpose: "投資判断に必要な情報を提示する"
+    content:
+      number: "¥1.2M"
+      unit: ""
+      caption: "6週間パイロット費用（demo値、税別）"
+      insight: "本格導入前に、限定範囲で効果を検証できる規模に抑えています。"
+    speaker_notes:
+      purpose: "投資規模の妥当性を伝える"
+      talking_points: ["本格導入時の費用体系は別途ご説明します"]
+      anticipated_questions: ["本格導入時の費用は？"]
+      transition: "最後に、次の一歩をご提案します"
+      sources: ["F04"]
+
+  - id: S15_ACTION
+    visual_type: summary
+    title: "まずは1拠点・6週間のパイロットから"
+    purpose: "意思決定を依頼する"
+    content:
+      recap:
+        - "出荷量増加に対し、現場の可視化が追いついていない"
+        - "CloudDesk Analyticsは既存システム改修なしで48時間以内に稼働"
+        - "類似拠点では6週間で手待ち時間23%削減を実証（demo値）"
+      action: "本日中に1拠点でのパイロット開始について合意いただき、来週中にキックオフ日程を確定させたいと考えております"
+    speaker_notes:
+      purpose: "明確なアクションを依頼して締める"
+      talking_points: ["意思決定に必要な情報は本日すべてお伝えした前提で、率直に合意を依頼する"]
+      anticipated_questions: ["社内稟議にはどの資料が必要か"]
+      transition: null
+      sources: []

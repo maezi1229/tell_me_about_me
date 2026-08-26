@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "template_analysis",
+  "description": "Output of engine/lib/templateAnalyzer.js after parsing a user-supplied .pptx template. Consumed by engine/lib/tokens.js as the highest-priority design source.",
+  "type": "object",
+  "properties": {
+    "source_file": { "type": "string" },
+    "analyzed_at": { "type": "string", "format": "date-time" },
+    "slide_size": {
+      "type": "object",
+      "properties": {
+        "width_in": { "type": "number" },
+        "height_in": { "type": "number" }
+      }
+    },
+    "theme": {
+      "type": "object",
+      "properties": {
+        "name": { "type": ["string", "null"] },
+        "colors": {
+          "type": "object",
+          "description": "Raw theme1.xml color map (dk1, lt1, dk2, lt2, accent1-6, hlink, folHlink)"
+        },
+        "fonts": {
+          "type": "object",
+          "properties": {
+            "heading": { "type": ["string", "null"] },
+            "body": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "layouts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "file": { "type": "string" },
+          "placeholders": { "type": "array", "items": { "type": "object" } }
+        }
+      }
+    },
+    "masters": { "type": "array", "items": { "type": "object" } },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Human-readable caveats about what could not be reliably extracted."
+    }
+  }
+}

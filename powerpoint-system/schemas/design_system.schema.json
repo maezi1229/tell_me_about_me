@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "design_system",
+  "description": "Design tokens shared by every slide of one deck. Change this file to restyle the whole deck without touching slides.yaml or engine code.",
+  "type": "object",
+  "required": ["colors", "fonts", "type_scale", "spacing", "slide"],
+  "properties": {
+    "name": { "type": "string" },
+    "source": { "type": "string", "enum": ["template_derived", "ai_default", "user_specified"] },
+    "slide": {
+      "type": "object",
+      "required": ["width_in", "height_in"],
+      "properties": {
+        "width_in": { "type": "number" },
+        "height_in": { "type": "number" },
+        "margin_in": { "type": "number" }
+      }
+    },
+    "colors": {
+      "type": "object",
+      "required": ["primary", "secondary", "accent", "background", "surface", "text_primary", "text_secondary", "text_on_primary", "border", "success", "warning", "danger", "chart_series"],
+      "properties": {
+        "primary": { "type": "string" },
+        "secondary": { "type": "string" },
+        "accent": { "type": "string" },
+        "background": { "type": "string" },
+        "surface": { "type": "string" },
+        "text_primary": { "type": "string" },
+        "text_secondary": { "type": "string" },
+        "text_on_primary": { "type": "string" },
+        "border": { "type": "string" },
+        "success": { "type": "string" },
+        "warning": { "type": "string" },
+        "danger": { "type": "string" },
+        "chart_series": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "fonts": {
+      "type": "object",
+      "required": ["heading", "body"],
+      "properties": {
+        "heading": { "type": "string" },
+        "body": { "type": "string" },
+        "mono": { "type": "string" }
+      }
+    },
+    "type_scale": {
+      "type": "object",
+      "required": ["title", "h1", "h2", "body", "small", "big_number"],
+      "properties": {
+        "title": { "type": "number" },
+        "h1": { "type": "number" },
+        "h2": { "type": "number" },
+        "body": { "type": "number" },
+        "small": { "type": "number" },
+        "big_number": { "type": "number" }
+      }
+    },
+    "spacing": {
+      "type": "object",
+      "required": ["unit"],
+      "properties": {
+        "unit": { "type": "number", "description": "Base spacing unit in inches; all layout gaps are multiples of this." }
+      }
+    },
+    "logo": {
+      "type": "object",
+      "properties": {
+        "path": { "type": ["string", "null"] },
+        "position": { "type": "string", "enum": ["top_left", "top_right", "bottom_left", "bottom_right", "none"] }
+      }
+    },
+    "footer": {
+      "type": "object",
+      "properties": {
+        "text": { "type": ["string", "null"] },
+        "show_page_number": { "type": "boolean" },
+        "show_on_cover": { "type": "boolean" }
+      }
+    }
+  }
+}

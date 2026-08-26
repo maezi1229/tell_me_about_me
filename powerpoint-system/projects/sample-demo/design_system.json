@@ -1,0 +1,62 @@
+{
+  "name": "default",
+  "source": "ai_default",
+  "slide": {
+    "width_in": 13.333,
+    "height_in": 7.5,
+    "margin_in": 0.6
+  },
+  "colors": {
+    "primary": "#1F3864",
+    "secondary": "#2E75B6",
+    "accent": "#ED7D31",
+    "background": "#FFFFFF",
+    "surface": "#F4F6F9",
+    "text_primary": "#1A1A1A",
+    "text_secondary": "#595959",
+    "text_on_primary": "#FFFFFF",
+    "border": "#D9D9D9",
+    "success": "#2E7D32",
+    "warning": "#ED6C02",
+    "danger": "#C62828",
+    "chart_series": [
+      "#1F3864",
+      "#2E75B6",
+      "#ED7D31",
+      "#8FAADC",
+      "#A9D18E",
+      "#F4B183"
+    ]
+  },
+  "fonts": {
+    "heading": "Yu Gothic",
+    "body": "Yu Gothic",
+    "mono": "Consolas"
+  },
+  "font_fallback_stack": [
+    "Yu Gothic",
+    "Meiryo",
+    "MS PGothic",
+    "Arial"
+  ],
+  "type_scale": {
+    "title": 40,
+    "h1": 28,
+    "h2": 20,
+    "body": 14,
+    "small": 11,
+    "big_number": 72
+  },
+  "spacing": {
+    "unit": 0.15
+  },
+  "logo": {
+    "path": null,
+    "position": "top_right"
+  },
+  "footer": {
+    "text": null,
+    "show_page_number": true,
+    "show_on_cover": false
+  }
+}

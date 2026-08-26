@@ -1,0 +1,7 @@
+[
+  { "id": "F01", "claim": "Meridian per-shipment handling cost trend, 3yr", "value": "+18%", "confidence": "inferred", "source_id": null, "notes": "Demo placeholder — must be confirmed with client's real finance data before real use." },
+  { "id": "F02", "claim": "Time-to-first-insight after data connection", "value": "48 hours", "confidence": "confirmed", "source_id": "SRC01" },
+  { "id": "F03", "claim": "Comparable pilot idle-dock time reduction", "value": "23%", "unit": "percent", "confidence": "confirmed", "source_id": "SRC02" },
+  { "id": "F04", "claim": "Pilot duration offered", "value": "6 weeks", "confidence": "confirmed", "source_id": null },
+  { "id": "F05", "claim": "Quarterly shipment volume trend (for chart demo)", "value": [1200, 1350, 1500, 1720], "confidence": "inferred", "source_id": null, "notes": "Illustrative series for the chart layout demo only." }
+]

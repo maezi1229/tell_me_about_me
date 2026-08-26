@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "sources",
+  "description": "Citation registry for external claims used anywhere in a deck.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "source", "claim"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^SRC[0-9]+$" },
+      "source": { "type": "string", "description": "Publisher / organization name" },
+      "url": { "type": ["string", "null"] },
+      "title": { "type": ["string", "null"] },
+      "accessed_date": { "type": ["string", "null"], "format": "date" },
+      "slide_id": { "type": ["string", "null"] },
+      "claim": { "type": "string", "description": "The specific claim this source backs" },
+      "trust_tier": {
+        "type": "string",
+        "enum": [
+          "user_primary",
+          "official_company",
+          "government",
+          "ir",
+          "industry_association",
+          "reputable_press",
+          "other_web",
+          "ai_inference"
+        ]
+      }
+    },
+    "additionalProperties": false
+  }
+}

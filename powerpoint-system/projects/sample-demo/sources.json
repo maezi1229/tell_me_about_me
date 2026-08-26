@@ -1,0 +1,4 @@
+[
+  { "id": "SRC01", "source": "Internal product sheet (demo placeholder)", "url": null, "title": "Product One-Pager v3", "accessed_date": "2026-08-20", "slide_id": "S05_SOLUTION", "claim": "Time-to-first-insight after data connection is 48 hours", "trust_tier": "user_primary" },
+  { "id": "SRC02", "source": "Internal case study (demo placeholder)", "url": null, "title": "Northbridge Distribution pilot results", "accessed_date": "2026-08-20", "slide_id": "S06_EVIDENCE", "claim": "Comparable pilot reduced idle-dock time by 23% in 6 weeks", "trust_tier": "user_primary" }
+]

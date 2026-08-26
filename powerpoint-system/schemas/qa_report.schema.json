@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "qa_report",
+  "description": "Structured output of engine/qaMechanical.js, rendered into qa_report.md. Visual/Editorial findings from the qa-reviewer agent are appended to the same markdown file but are not part of this machine-generated structure.",
+  "type": "object",
+  "required": ["project", "version", "generated_at", "findings"],
+  "properties": {
+    "project": { "type": "string" },
+    "version": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "slide_count": { "type": "integer" },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slide_id", "type", "severity", "message"],
+        "properties": {
+          "slide_id": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["overflow", "overlap", "missing_asset", "font_violation", "empty_content", "structural"]
+          },
+          "severity": { "type": "string", "enum": ["critical", "major", "minor"] },
+          "message": { "type": "string" },
+          "detail": { "type": "object" }
+        }
+      }
+    },
+    "verdict": { "type": "string", "enum": ["pass", "pass_with_minor_issues", "not_ready"] }
+  }
+}
